@@ -75,3 +75,9 @@ This section has moved here: [https://facebook.github.io/create-react-app/docs/d
 ### `yarn build` fails to minify
 
 This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+
+### License for using favicon.io
+
+CC-BY 4.0: https://creativecommons.org/licenses/by/4.0/
+
+Twemoji: https://twemoji.twitter.com/
