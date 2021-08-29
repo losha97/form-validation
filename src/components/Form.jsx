@@ -31,13 +31,14 @@ const Form = () => {
         {errors.name && <p className="form__error">{errors.name}</p>}
       </div>
       <div className="form">
-        <span className="form__title">Email</span>
+        <span className="form__title required">Email</span>
         <input
           value={data.email || ''}
           name="email"
           type="email"
           onChange={handleChange}
           className="form__input"
+          required
         />
         {errors.email && <p className="form__error">{errors.email}</p>}
       </div>
