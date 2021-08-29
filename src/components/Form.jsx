@@ -18,6 +18,7 @@ const Form = () => {
 
   return (
     <form onSubmit={handleSubmit} className="form__wrapper">
+      <h1 className="form__wrapper-title">Create an Account</h1>
       <div className="form">
         <span className="form__title required">Name</span>
         <input
@@ -70,28 +71,43 @@ const Form = () => {
       <div className="form">
         <span className="form__title required">Gender</span>
         <div className="form__radio">
-          <input
-            value="male"
-            name="gender"
-            type="radio"
-            checked={data.gender === "male"}
-            onChange={handleChange}
-            className="form__input"
-            required
-          />
-          <span className="form__title">Male</span>
+          <label className="custom-input--radio">
+            <input
+              value="male"
+              name="gender"
+              type="radio"
+              checked={data.gender === "male"}
+              onChange={handleChange}
+              className="form__input"
+              required
+            />
+            <span className="form__title">Male</span>
+            <span class="custom-input__checkmark"></span>
+          </label>
         </div>
         <div className="form__radio">
-          <input
-            value="female"
-            name="gender"
-            type="radio"
-            checked={data.gender === "female"}
-            onChange={handleChange}
-            className="form__input"
-            required
-          />
-          <span className="form__title">Female</span>
+          <label className="custom-input--radio">
+            <input
+              value="female"
+              name="gender"
+              type="radio"
+              checked={data.gender === "female"}
+              onChange={handleChange}
+              className="form__input"
+              required
+            />
+            <span className="form__title">Female</span>
+            <span class="custom-input__checkmark"></span>
+          </label>
+        </div>
+      </div>
+      <div className="form form__separator">
+        <div className="form__checkbox">
+          <label className="custom-input--checkbox">
+            <input type="checkbox" name="checkbox" value="value" />
+            <span>I agree to the Terms & Conditions</span>
+            <span class="custom-input__checkmark"></span>
+          </label>
         </div>
       </div>
       <button type="submit" className="form__submit">
