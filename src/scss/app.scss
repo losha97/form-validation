@@ -1,0 +1,103 @@
+/*
+* @Author: Aleksiej Kuncewicz
+* @Date:   2021-08-29 11:31:32
+* @Last Modified by:   Aleksiej Kuncewicz
+* @Last Modified time: 2021-08-29 14:00:23
+*/
+
+#root {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  width: 100%;
+}
+
+.form__wrapper {
+  width: 60%;
+  padding: 24px;
+  border-radius: 4px;
+  background-color: #DDC9BC;
+}
+
+.form {
+  display: flex;
+  flex-direction: column;
+
+  &:not(:last-child) {
+    margin-bottom: 12px;
+  }
+}
+
+.form__row {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+
+  .form {
+    width: calc((100% / 2) - 6px);
+  }
+}
+
+.form__title {
+  margin-bottom: 6px;
+  font-size: 14px;
+  font-weight: 700;
+  color: #8E7C68;
+
+  &.required::after {
+    content: '*';
+    display: inline-block;
+    padding: 0 2px;
+    color: #ED7458;
+  }
+}
+
+.form__input {
+  display: inline-block;
+  padding: 8px 6px;
+  border-radius: 4px;
+  border: 1px solid #FFDC9F;
+  background-color: #F2EBE0;
+  color: #8E7C68;
+}
+
+.form__error {
+
+}
+
+.form__radio {
+  display: flex;
+  align-items: center;
+
+  &:not(:last-child) {
+    margin-bottom: 6px;
+  }
+
+  .form__input {
+    margin: 0 6px 0 0;
+    cursor: pointer;
+  }
+
+  .form__title {
+    margin: 0;
+    font-size: 12px;
+    font-weight: 500;
+  }
+}
+
+.form__submit {
+  width: 100%;
+  padding: 12px 0;
+  font-weight: 700;
+  text-transform: uppercase;
+  border-radius: 4px;
+  border: 1px solid #FFDC9F;
+  background-color: #FFDC9F;
+  color: #8E7C68;
+  cursor: pointer;
+
+  &:hover {
+    border-color: #8E7C68;
+  }
+}
